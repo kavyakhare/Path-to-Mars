@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Path to Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id="cssTheme" rel="stylesheet" href="public/styling/cssBasic.css"/>
+    <link rel="shortcut icon" type="image/png" href="public/styling/Rover-512.webp"/>
+  </head>
+  <body>
+    <div id='navbarDiv'>
+     <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a id="refreshButton" class="navbar-brand" href="#">Pathfinding Visualizer: Navigate to Mars</a>
+         </div>
+         <ul class="nav navbar-nav">
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Algorithms
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='startButtonDijkstra'><a href="#">Dijkstra's Algorithm</a></li>
+               <li id='startButtonAStar2'><a href="#">A* Search</a></li>
+               <li id='startButtonGreedy'><a href="#">Greedy Best-first Search</a></li>
+             
+               <li id='startButtonBFS'><a href="#">Breadth-first Search</a></li>
+               
+             </ul>
+           </li>
+  <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Path Estimator
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='startButtonDijkstra'><a href="#">Basic Path Estimation</a></li>
+               <li id='startButtonAStar2'><a href="#">Smart Path Estimation</a></li>
+               <!-- <li id='startButtonAStar2'><a href="#">Euclidean</a></li> -->
+<!--                <li id='startButtonGreedy'><a href="#">Octile</a></li>
+               <li id='startButtonBFS'><a href="#">Chebyshev</a></li> -->
+             </ul>
+           </li>
+           <li class="dropdown">
+          
+             <ul class="dropdown-menu">
+               <li id='startButtonCreateMazeTwo'></li>
+               <li id='startButtonCreateMazeThree'></li>
+               <li id='startButtonCreateMazeFour'></li>
+               <li id='startButtonCreateMazeOne'></li>
+               <li id='startButtonCreateMazeWeights'></li>
+               <li id='startStairDemonstration'></li>
+             </ul>
+           </li>
+           <li id='startButtonAddObject'></li>
+           <li id='startButtonStart'><button id="actualStartButton" class="btn btn-default navbar-btn" type="button">Visualize!</button></li>
+           <li id='startButtonClearBoard'><a href="#">Clear Board</a></li>
+           <li id='startButtonClearWalls'><a href="#">Clear Walls</a></li>
+           <li id='startButtonClearPath'><a href="#">Clear Path</a></li>
+           <li class="dropdown">
+<!--              <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">
+             <span class="caret"></span></a> -->
+             <ul class="dropdown-menu">
+               <li id='adjustFast'><a href="#">Fast</a></li>
+               <li id='adjustAverage'><a href="#">Average</a></li>
+               <li id='adjustSlow'><a href="#">Slow</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </nav>
+   </div>
+    <div id="tutorial">
+      <h3>Lets Explore Mars with Pathfinding Visualizer!</h3>
+<!-- <<<<<<< HEAD -->
+      <h6>The Path Finding Visualizer helps the Rover reach the Station base on Mars at minimum time depending on the Algorithm of your choice.</h6>
+      
+      <img id="mainTutorialImage" src="public/styling/Rover-512.webp">
+
+      
+      
+      <button id="skipButton" class="btn btn-default navbar-btn" type="button">X</button>
+
+    </div>
+    <div id='mainGrid'>
+      <div id='mainText'>
+        <ul>
+          <li>
+            <div class="start"></div>Start Node</li>
+          <li>
+            <div class="target"></div>Target Node</li>
+          <li id="bombLegend">
+            </li>
+          <li id="weightLegend">
+            </li>
+          <li>
+            <div class="unvisited"></div>Unvisited Node</li>
+          <li>
+            <div class="visited"></div><div class="visitedobject"></div>Visited Nodes</li>
+          <li>
+            <div class="shortest-path"></div>Shortest-path Node</li>
+          <li>
+            <div class="wall"></div>Wall Node</li>
+        </ul>
+      </div>
+      <div id="algorithmDescriptor">Pick an algorithm and visualize it!</div>
+      <table id='board'/>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='public/browser/bundle.js'></script>
+</html>

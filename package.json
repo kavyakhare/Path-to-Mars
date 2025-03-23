@@ -1,0 +1,23 @@
+{
+  "name": "pathfinding_algorithms",
+  "version": "1.0.0",
+  "description": "Customized version of the Mars Colonization Program",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaihonikhil/THE-MARS-COLONIZATION-PROGRAM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jaihonikhil/THE-MARS-COLONIZATION-PROGRAM/issues"
+  },
+  "homepage": "https://github.com/jaihonikhil/THE-MARS-COLONIZATION-PROGRAM#readme"
+}
