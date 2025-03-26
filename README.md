@@ -1,15 +1,13 @@
-THE MARS COLONIZATION PROGRAM- PART OF THE MICROSOFT ENGAGE PROJECT 
+LETS EXPLORE THE MARS!!
 
-Check out the Project! https://jaihonikhil.github.io/THE-MARS-COLONIZATION-PROGRAM/#
+Check out the Project! 
 
-We were 5th Nationally for this novel method of optimizing the Path-Finding Algorithm
-PathFinding.js
 ==============
 
 Initiatives
 ------------
 
-* We have created a new heuristics which we have provided in the project by the name of Optimized Manhatten. Having tested the heuristic on benchmark, we have managed time reduction by approx 50% in case of Astar algorithm and approx 15% reduction in time in Best First Search. The length of path and number of operations remain unaltered, hence we have not applied greedy algorithm to reduce time and compromise on the optimal path. *
+* Under the guidance of my senior, I have implemented a new heuristic in the project, named Optimized Manhattan. After testing the heuristic on benchmarks, we observed approximately a 50% reduction in execution time for the A algorithm and around a 15% reduction in time for Best First Search. The length of the path and the number of operations remain unchanged. To ensure optimal pathfinding, we have not applied a greedy algorithm that could compromise accuracy. *
 
 ![](images/Astar_manhatten.PNG)
 ![](images/Astar_optimised_manhatten.PNG)
